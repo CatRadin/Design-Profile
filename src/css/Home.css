@@ -70,13 +70,13 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .middle-section p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 3rem;
+	font-size: 3.8rem;
 	position: absolute;
-	left: 23%;
-	margin-top: -6rem;
+	left: 11%;
+	margin-top: -10rem;
 	color: rgb(7, 7, 7);
-	padding: 1rem;
-	text-align: left;
+
+	text-align: right;
 	
 }
 
@@ -90,17 +90,30 @@ table {
 	letter-spacing: 0.1rem;
 }
 
+.last-name {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: #36aaa6;
+	font-size: 4.5rem;
+	letter-spacing: 0.1rem;
+	
+}
+
 .pink-accent{
 	color: #dc9596;
 }
 
+.blue-accent{
+	color: #36aaa6;
+}
+
 .image-container {
 	position: absolute;
-	left: 45%;
+	left: 50rem;
 	margin-top: 6rem;
 	margin-left: 9rem;
 	z-index: 20;
-	cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/sparkles_2728.png"), auto;
+	cursor: url("../assets/cursor.png"), auto;
 	
 }
 
@@ -110,14 +123,13 @@ table {
 	height: 60%;
 	border-radius: 0.5rem;
 	object-fit: cover;
-	
 	transition: all .5s ease-in;
 	
 }
 .top-bar{
-	width: 100vw;
+	/* width: 100vw;
 	height: 4%;
-	background-color: #f8f0ce;
+	background-color: #f8f0ce; */
 }
 
 .image-container{
@@ -159,27 +171,22 @@ table {
 
 .center-color-box {
 	position: fixed;
-	width: 90%;
+	width: 85%;
 	height: 40vh;
-	background-color: #faf7e7;
-	background-color: #f8f0ce;
 	background-color: #939ABC;
-	/* background-color: #ebe9b0; */
-	
-	
 	bottom: 0;
 	z-index: -1;
 }
 
 .links {
 	width: 10%;
-	text-align: right;
+	text-align: left;
 	position: absolute;
 	left: 9.5rem;
-	margin-top: 10rem;	
+	bottom: 3rem;	
 }
 .links li {
-	padding: 2rem;	
+	padding: 1.5rem;	
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
@@ -187,23 +194,37 @@ table {
 	text-decoration: none;
 	font-family: 'PT Mono', monospace;
 	color:black;
-	font-size: 1.6rem;
-	/* position: absolute;
-	left: 9.5rem;
-	margin-top: 10rem;	 */
-	
-	
+	/* color:#f7f7f7; */
+	text-shadow: black;
+	font-size: 1.6rem;	
 }
 
 .heartArrow {
-	/* transform: scaleX(-1); */
 	height: 50%;
 	transform: rotate(-15deg);
 	position:fixed;
 	bottom: 0;
-	/* margin-right: 10rem; */
 	padding-right: 15rem;
+	z-index: 400;
 	
+}
+
+.yellow-side{
+	height: 25.4vh;
+	width: 0.5rem;
+	background-color: #f8ecb3;
+	background-color: #dc9596;
+	position: absolute;
+	bottom: 4.3rem;
+	left: 10.2rem;
+
+}
+.sun {
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	top: 1.5rem;
+	right: 10rem;
 }
 
 .click {
@@ -215,29 +236,36 @@ table {
 	left: 34rem;
 	bottom: 12rem;
 	letter-spacing: 0.4rem;
-	transform: rotate(-15deg);
-	
+	transform: rotate(-15deg);	
 }
 
 .links a:hover{
+	transition: all .3s ease-in;
+	color: #111111;
 	text-decoration: #07beb8 0.3rem solid underline;
 }
 
 .gardner {
-	transition: all .5s ease-in;
-	background: linear-gradient(#a7c588, #a7c588) 0 88% / 100% .6rem no-repeat;
+	color: #6f8d50;
+	font-weight: 550;
 	
 }
 .gamer {
-	transition: all .5s ease-in;
-	background: linear-gradient(#dba7db, #dba7db) 0 88% / 100% .6rem no-repeat;
+	color: #dba7db;
+	font-weight: 550;
 }
 .reader {
-	transition: all .5s ease-in;
-	background: linear-gradient(#07beb8, #07beb8) 0 88% / 100% .6rem no-repeat;
+	color: #07beb8;
+	font-weight: 550;
+	
 }
 
 .cat {
-	transition: all .5s ease-in;
-	background: linear-gradient(#ff9766, #ff9766) 0 88% / 100% .6rem no-repeat;
+	color: #ff9766;
+	font-weight: 550;
+}
+
+.enthusiast {
+color: #8cad7d;
+font-weight: 550;
 }

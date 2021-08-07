@@ -9,10 +9,12 @@ import reader from '../assets/reader.jpg'
 import heartArrow from '../assets/heartArrow.webp'
 import me from "../assets/Me.jpg"
 import toast from "../assets/Toast.jpg"
+import sun from "../assets/yellowSun2.png"
 
 
 const images = [me, toast, gardener, gamer, reader]
-const text = ["", "a cat mom", "a gardner", "a gamer", "a reader"];
+const text = ["D&D enthusiast",
+    "cat mom", "gardner", "gamer", "reader"];
 
 
 export default function Home() {
@@ -46,6 +48,7 @@ export default function Home() {
             <img className='sparkle' src={sparkle} alt='sparkle gif' />
 
             <div className='middle-section'>
+                <div className='yellow-side'></div>
                 <div className='links'>
                     <ul>
                         <il>
@@ -67,10 +70,10 @@ export default function Home() {
                 <p><span className='name'>Catherine <br /></span>
                     <span className='last-name' >Radin-Schneider</span> <br />
                     is a UX <span className='pink-accent'>/</span> UI Designer <span className='pink-accent'>+</span> <br />
-                    Full Stack Web Developer <span className='pink-accent'>&</span>  <br />
-                    <span className={text[currentImage]} >{text[currentImage]}</span>
+                    Full Stack Web Developer <span className='blue-accent'>&</span>  <br /> a <span className={text[currentImage]}>{text[currentImage]}</span>
                     <span className='pink-accent'>.</span></p>
             </div>
+            <img className="sun" src={sun} />
             <div className='image-container'>
                 <img alt="" className='images' src={images[currentImage]}
                     onClick={handleClick} />
