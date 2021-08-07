@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #f7f7f7;
+	
 }
 ol, ul {
 	list-style: none;
@@ -43,11 +45,10 @@ table {
 }
 
 .home {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
 	display: flex;
-	flex-direction: column;
-    
+	flex-direction: column;  
 }
 
 .sparkle {
@@ -71,10 +72,12 @@ table {
 	font-family: 'Poppins', sans-serif;
 	font-size: 3rem;
 	position: absolute;
-	left: 20%;
-	margin-top: 1rem;
+	left: 23%;
+	margin-top: -6rem;
 	color: rgb(7, 7, 7);
 	padding: 1rem;
+	text-align: left;
+	
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
@@ -83,7 +86,7 @@ table {
 	font-weight: 700;
 	color: #f5cb5c;
 	color: #dc9596;
-	font-size: 3.2rem;
+	font-size: 6.2rem;
 	letter-spacing: 0.1rem;
 }
 
@@ -93,30 +96,57 @@ table {
 
 .image-container {
 	position: absolute;
-	z-index: -1;
-	left: 60%;
+	left: 45%;
 	margin-top: 6rem;
 	margin-left: 9rem;
+	z-index: 20;
+	cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/sparkles_2728.png"), auto;
 	
 }
 
+
 .images{
+	width: 60%;
+	height: 60%;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	
+	transition: all .5s ease-in;
+	
+}
+.top-bar{
+	width: 100vw;
+	height: 4%;
+	background-color: #f8f0ce;
+}
+
+.image-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 4rem;
+}
+
+.noise {
+	position: absolute;
 	width: 80%;
-	height: auto;
-	border-radius: 1rem;
-	filter: blur(0.05rem);
+	height: 100%;
+	background-repeat: no-repeat;
+	margin-top: 2rem;
 	
 }
 
 .img-count {
-	position: absolute;
-	right: 21rem;
-	margin-top: 50rem;
+	z-index: 30;
 	font-size: 2rem;
 	color: #faf7e7;
+	position: relative;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 100;
-
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1rem;
 }
 
 .bottom-box{
@@ -133,13 +163,23 @@ table {
 	height: 40vh;
 	background-color: #faf7e7;
 	background-color: #f8f0ce;
+	background-color: #939ABC;
+	/* background-color: #ebe9b0; */
+	
+	
 	bottom: 0;
-	z-index: -2;
+	z-index: -1;
 }
 
-
+.links {
+	width: 10%;
+	text-align: right;
+	position: absolute;
+	left: 9.5rem;
+	margin-top: 10rem;	
+}
 .links li {
-	padding: 2.5rem;
+	padding: 2rem;	
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
@@ -148,13 +188,56 @@ table {
 	font-family: 'PT Mono', monospace;
 	color:black;
 	font-size: 1.6rem;
-	position: absolute;
-	left: 7.5rem;
-	margin-top: 10rem;
+	/* position: absolute;
+	left: 9.5rem;
+	margin-top: 10rem;	 */
 	
 	
 }
 
+.heartArrow {
+	/* transform: scaleX(-1); */
+	height: 50%;
+	transform: rotate(-15deg);
+	position:fixed;
+	bottom: 0;
+	/* margin-right: 10rem; */
+	padding-right: 15rem;
+	
+}
+
+.click {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 4rem;
+	font-weight: 600;
+	position: absolute;
+	left: 34rem;
+	bottom: 12rem;
+	letter-spacing: 0.4rem;
+	transform: rotate(-15deg);
+	
+}
+
 .links a:hover{
-	text-decoration: green solid underline;
+	text-decoration: #07beb8 0.3rem solid underline;
+}
+
+.gardner {
+	transition: all .5s ease-in;
+	background: linear-gradient(#a7c588, #a7c588) 0 88% / 100% .6rem no-repeat;
+	
+}
+.gamer {
+	transition: all .5s ease-in;
+	background: linear-gradient(#dba7db, #dba7db) 0 88% / 100% .6rem no-repeat;
+}
+.reader {
+	transition: all .5s ease-in;
+	background: linear-gradient(#07beb8, #07beb8) 0 88% / 100% .6rem no-repeat;
+}
+
+.cat {
+	transition: all .5s ease-in;
+	background: linear-gradient(#ff9766, #ff9766) 0 88% / 100% .6rem no-repeat;
 }
