@@ -24,6 +24,7 @@ export default function Home() {
 
 
     const handleClick = () => {
+        
         setCurrentImage((currentImage) => {
             if (currentImage < length) {
                 return currentImage + 1
